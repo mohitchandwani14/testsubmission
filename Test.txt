@@ -1,0 +1,131 @@
+1. WAP to accept 2 numbers from Command line argument and perform its addition and display
+code:-
+public class commandlineaddition
+{
+public static void main(String args[])
+{
+	
+	System.out.println("addition="+(Integer.parseInt(args[0])+Integer.parseInt(args[1])));
+}
+}
+2. WAP to accept number from user(Scanner class) print table of it
+	5*1=5
+	5*2=10
+	5*3=15
+	5*4=20
+..
+code:-
+import java.util.Scanner;
+public class table
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+System.out.println("table of "+a);
+for(int i=1;i<=10;i++)
+{
+System.out.println(a+"*"+i+"="+(a*i));
+}
+}
+}
+3.WAP to swap 2 numbers and display it before swap and after swap.
+code:-
+import java.util.Scanner;
+public class swap
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+System.out.println("before swapping "+a+" "+b);
+a=a+b;
+b=a-b;
+a=a-b;
+
+System.out.println("after swapping "+a+" "+b);
+
+}
+}
+4.WAP to check whether a number given is even or odd
+code:-
+import java.util.Scanner;
+public class evenodd
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+if(a%2==0)
+System.out.println(a+" is even number");
+else
+System.out.println(a+" is odd number");
+
+
+}
+}
+5.WAP to accept an array and display it in reverse form
+code:-
+import java.util.Scanner;
+
+class reverse{
+
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+int a[]=new int[5];
+	
+	
+System.out.println("enter 5 integer");
+for(int i=0;i<a.length;i++)//Row
+{
+a[i]=sc.nextInt();
+		
+}
+System.out.println("reversing the array");
+	
+for(int i=a.length-1;i>=0;i--)
+{
+System.out.print(a[i]);	
+}
+}
+}
+6.WAP to illustrate condition operator to find maximum among 2or 3 numbers
+code:-
+import java.util.Scanner;
+public class ternary
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+System.out.println("maximum number="+(a>b?a>c?a:c:b>c?b:c));
+}
+}
+
+7.WAP to illustrate example of typecasting 
+code:-
+import java.util.Scanner;
+public class typecasting
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+long d=a;    //widening typecasting
+long f=b;    //widening
+short e=(short)c;		//narrowing typecasting
+byte g=(byte)e;
+float h=a;
+System.out.println("long value"+d);
+System.out.println("long value"+f);
+System.out.println("short value"+e);
+System.out.println("byte value"+g);
+System.out.println("float value"+h);
+}
+}
